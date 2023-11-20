@@ -1,0 +1,36 @@
+$primary: #333333;
+$secondary: #DDDDDD;
+$dark: #000000;
+
+$enable-gradients: false;
+$enable-shadows: false;
+$td-enable-google-fonts: false;
+
+.navbar-brand {
+  svg {
+    width: 100px;
+  }
+  &__name {
+    display: none;
+  }
+}
+
+.td-overlay--dark::after {
+  display: none;
+}
+.td-cover-block {
+  color: white;
+  background: black;
+}
+.td-navbar, .navbar {
+  background-color: black !important;
+}
+
+.td-toc {
+    margin-top: 30px;
+}
+footer.bg-dark {
+  a {
+    color: #CCCCCC;
+  }
+}

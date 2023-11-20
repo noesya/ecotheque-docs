@@ -1,0 +1,42 @@
+theme: hextra
+baseURL: /
+title: Écothèque
+
+defaultContentLanguage: fr
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 2
+    - name: Rechercher
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/noesya/ecotheque"
+      params:
+        icon: github
+  
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-white.svg
+      link: /
+      width: 100
+      height: 20
+  editURL:
+    enable: true
+    base: "https://github.com/noesya/ecotheque/edit/main/content"
