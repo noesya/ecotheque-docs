@@ -23,7 +23,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/noesya/ecotheque"
+      url: "https://github.com/noesya/ecotheque-docs"
       params:
         icon: github
   
@@ -39,4 +39,4 @@ params:
       height: 20
   editURL:
     enable: true
-    base: "https://github.com/noesya/ecotheque/edit/main/content"
+    base: "https://github.com/noesya/ecotheque-docs/edit/main/content"
