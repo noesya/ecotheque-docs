@@ -15,15 +15,6 @@ jobs:
       with:
         submodules: true
 
-    - name: Installation de Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-        cache: 'yarn'
-
-    - name: Installation des dépendances JavaScript
-      run: yarn install
-
     - name: Installation de Hugo
       uses: peaceiris/actions-hugo@v2.6.0
       with:
