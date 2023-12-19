@@ -40,3 +40,8 @@ params:
   editURL:
     enable: true
     base: "https://github.com/noesya/ecotheque-docs/edit/main/content"
+
+deployment:
+  targets:
+    - name: "production"
+      URL: "s3://docs.ecotheque?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
