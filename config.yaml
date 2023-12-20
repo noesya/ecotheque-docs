@@ -44,4 +44,4 @@ params:
 deployment:
   targets:
     - name: "production"
-      URL: "s3://docs.ecotheque?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
+      URL: "s3://docs.ecotheque.fr?endpoint=garage.deuxfleurs.fr&s3ForcePathStyle=true&region=garage"
