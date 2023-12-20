@@ -5,7 +5,7 @@ layout: hextra-home
 
 {{< hextra/hero-badge >}}
   <div class="w-2 h-2 rounded-full bg-primary-400"></div>
-  <span>Licence ?</span>
+  <span>Licence AGPL</span>
 {{< /hextra/hero-badge >}}
 
 <div class="mt-6 mb-6">
