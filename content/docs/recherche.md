@@ -6,25 +6,29 @@ On utilise ElasticSearch pour la recherche.
 
 ## Installation
 
+*NOTE : On ne peut pas utiliser Homebrew pour installer ElasticSearch car la formule actuelle (au 21 mars 2024) ne fonctionne pas sur les dernières versions de macOS.*
+
+*NOTE 2 : On utilise la version 7 d'ElasticSearch car Scalingo ne supporte pas la version 8 (au 21 mars 2024).*
+
 Télécharger et décompresser ElasticSearch.
 
 ```bash
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.12.2-linux-x86_64.tar.gz
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.12.2-linux-x86_64.tar.gz.sha512
-shasum -a 512 -c elasticsearch-8.12.2-linux-x86_64.tar.gz.sha512
-tar -xzf elasticsearch-8.12.2-linux-x86_64.tar.gz
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-darwin-x86_64.tar.gz
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-darwin-x86_64.tar.gz.sha512
+shasum -a 512 -c elasticsearch-7.17.18-darwin-x86_64.tar.gz.sha512
+tar -xzf elasticsearch-7.17.18-darwin-x86_64.tar.gz
 ```
 
 Déplacer le dossier dans `/usr/local`.
 
 ```bash
-sudo mv elasticsearch-8.12.2 /usr/local
+sudo mv elasticsearch-7.17.18 /usr/local
 ```
 
 Modifier votre fichier `.zshrc` avec `nano ~/.zshrc` et ajouter les lignes suivantes.
 
 ```bash
-export ES_HOME=/usr/local/elasticsearch-8.12.2
+export ES_HOME=/usr/local/elasticsearch-7.17.18
 export PATH=$ES_HOME/bin:$PATH
 ```
 
