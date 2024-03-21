@@ -35,7 +35,7 @@ export PATH=$ES_HOME/bin:$PATH
 
 Pour appliquer les modifications, relancer un Terminal ou exécuter `source ~/.zshrc`.
 
-Modifier le fichier de configuration avec `nano $ES_HOME/config/elasticsearch.yml`, et ajouter les lignes suivantes.
+Modifier le fichier de configuration avec `nano $ES_HOME/config/elasticsearch.yml`, et ajouter la ligne suivante à la fin du fichier.
 
 ```yml
 xpack.ml.enabled: false
