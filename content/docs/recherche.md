@@ -39,7 +39,7 @@ Modifier le fichier de configuration avec `nano $ES_HOME/config/elasticsearch.ym
 
 ```yml
 xpack.ml.enabled: false
-xpack.security.enabled: false # Le passer de "true" à "false"
+xpack.security.enabled: false
 ```
 
 ## Utilisation
