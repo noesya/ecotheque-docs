@@ -18,6 +18,7 @@ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-
 shasum -a 512 -c elasticsearch-7.17.18-darwin-x86_64.tar.gz.sha512
 tar -xzf elasticsearch-7.17.18-darwin-x86_64.tar.gz
 rm elasticsearch-7.17.18-darwin-x86_64.tar.gz
+rm elasticsearch-7.17.18-darwin-x86_64.tar.gz.sha512
 ```
 
 Déplacer le dossier dans `/usr/local`.
