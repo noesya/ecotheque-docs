@@ -10,11 +10,18 @@ On utilise ElasticSearch pour la recherche.
 
 *NOTE 2 : On utilise la version 7 d'ElasticSearch car Scalingo ne supporte pas la version 8 (au 21 mars 2024).*
 
-Télécharger et décompresser ElasticSearch.
+Télécharger ElasticSearch.
 
 ```bash
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-darwin-x86_64.tar.gz
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.18-darwin-x86_64.tar.gz.sha512
+```
+
+Si `wget` est introuvable, installez-le avec `brew install wget`.
+
+Décompresser ElasticSearch.
+
+```bash
 shasum -a 512 -c elasticsearch-7.17.18-darwin-x86_64.tar.gz.sha512
 tar -xzf elasticsearch-7.17.18-darwin-x86_64.tar.gz
 rm elasticsearch-7.17.18-darwin-x86_64.tar.gz
